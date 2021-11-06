@@ -11,4 +11,4 @@ const fizzbuzz = (n, h, w) => {
         return n;
 };
 exports.default = fizzbuzz;
-//# sourceMappingURL=helloworld.js.map
+//# sourceMappingURL=fizzbuzz.js.map

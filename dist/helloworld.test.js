@@ -1,15 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const helloworld_1 = require("./helloworld");
 describe('helloworld()', () => {
     it('helloworld(6, 3, 5) debe retornar "Hello"', () => {
-        expect(helloworld_1.default(6, 3, 5)).toBe("Hello");
+        // Evalua que el 6 es multiplo de 3
+        expect(helloworld(6, 3, 5)).toBe("Hello");
     });
-    it('helloworld(100, 8, 10) debe retornar "World"', () => {
-        expect(helloworld_1.default(100, 8, 10)).toBe("World");
+    it('helloworld(50, 3, 5) debe retornar "World"', () => {
+        // Evalua que el 50 es multiplo de 5
+        expect(helloworld(50, 3, 5)).toBe("World");
     });
     it('helloworld(15, 3, 5) debe retornar "HelloWorld"', () => {
-        expect(helloworld_1.default(15, 3, 5)).toBe("HelloWorld");
+        // Evalua que el 15 es multiplo de 3 y 5
+        expect(helloworld(15, 3, 5)).toBe("HelloWorld");
+    });
+    it('muestra en pantalla los 100 primeros numeros"', () => {
+        let arrayFizzBuzz = [];
+        for (let i = 0; i < 100; i++) {
+            arrayFizzBuzz.push(helloworld(i + 1, 3, 5));
+        }
+        console.log(arrayFizzBuzz);
+        expect(helloworld(15, 3, 5)).toBe("HelloWorld");
     });
 });
 //# sourceMappingURL=helloworld.test.js.map

@@ -1,6 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const fizzbuzz = (n, h, w) => {
+const fizzbuzz = (n: number, h: number, w: number) => {
+
     if (n % h === 0 && n % w === 0)
         return "FizzBuzz";
     else if (n % h === 0)
@@ -9,6 +8,8 @@ const fizzbuzz = (n, h, w) => {
         return "Buzz";
     else
         return n;
-};
-exports.default = fizzbuzz;
-//# sourceMappingURL=helloworld.js.map
+    
+}
+
+export default fizzbuzz;
+
